@@ -92,7 +92,7 @@
   top: 10px;
   right: 10px;
 }
-.article .expandButton {
+.article .btn-container {
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -101,9 +101,19 @@
   cursor: pointer;
   transform: translate(-50%);
   background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 20%;
+}
+.article .btn-container .readButton {
+  color: #EA5174;
 }
 .article-open {
   height: 400px;
+}
+.article-delete {
+  display: none;
 }
 html,
 body {
